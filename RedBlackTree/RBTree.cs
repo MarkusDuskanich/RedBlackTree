@@ -113,6 +113,7 @@ namespace RedBlackTree {
         }
 
         public void Remove(TKey key) {
+            throw new NotImplementedException();
             Delete(GetNode(_root, key));
         }
 
@@ -130,7 +131,6 @@ namespace RedBlackTree {
                 _root = target;
             else if (origin == target.Parent.LeftChild)
                 origin.Parent.LeftChild = target;
-                    //fuck lol
         }
 
         private Node RotateLeft(Node A) {
